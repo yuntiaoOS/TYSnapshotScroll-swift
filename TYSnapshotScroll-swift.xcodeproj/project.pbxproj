@@ -12,6 +12,12 @@
 		894063972281764200F9C656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894063952281764200F9C656 /* Main.storyboard */; };
 		894063992281764300F9C656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 894063982281764300F9C656 /* Assets.xcassets */; };
 		8940639C2281764300F9C656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8940639A2281764300F9C656 /* LaunchScreen.storyboard */; };
+		894063A52281766800F9C656 /* TYSnapshotScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894063A42281766800F9C656 /* TYSnapshotScroll.swift */; };
+		894063A72281769400F9C656 /* UIView+TYSnapshotScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894063A62281769400F9C656 /* UIView+TYSnapshotScroll.swift */; };
+		894063A9228176A800F9C656 /* UIImage+TYSnapshotScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894063A8228176A800F9C656 /* UIImage+TYSnapshotScroll.swift */; };
+		894063AB228176C100F9C656 /* UIScrollView+TYSnapshotScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894063AA228176C100F9C656 /* UIScrollView+TYSnapshotScroll.swift */; };
+		894063AD228176D200F9C656 /* UIViewController+TYSnapshotScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894063AC228176D200F9C656 /* UIViewController+TYSnapshotScroll.swift */; };
+		894063AF228176E600F9C656 /* WKWebView+TYSnapshotScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894063AE228176E600F9C656 /* WKWebView+TYSnapshotScroll.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		894063982281764300F9C656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8940639B2281764300F9C656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8940639D2281764300F9C656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		894063A42281766800F9C656 /* TYSnapshotScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYSnapshotScroll.swift; sourceTree = "<group>"; };
+		894063A62281769400F9C656 /* UIView+TYSnapshotScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TYSnapshotScroll.swift"; sourceTree = "<group>"; };
+		894063A8228176A800F9C656 /* UIImage+TYSnapshotScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TYSnapshotScroll.swift"; sourceTree = "<group>"; };
+		894063AA228176C100F9C656 /* UIScrollView+TYSnapshotScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+TYSnapshotScroll.swift"; sourceTree = "<group>"; };
+		894063AC228176D200F9C656 /* UIViewController+TYSnapshotScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TYSnapshotScroll.swift"; sourceTree = "<group>"; };
+		894063AE228176E600F9C656 /* WKWebView+TYSnapshotScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+TYSnapshotScroll.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +68,26 @@
 			children = (
 				894063912281764200F9C656 /* AppDelegate.swift */,
 				894063932281764200F9C656 /* ViewController.swift */,
+				894063A32281764D00F9C656 /* TYSnapshotScroll */,
 				894063952281764200F9C656 /* Main.storyboard */,
 				894063982281764300F9C656 /* Assets.xcassets */,
 				8940639A2281764300F9C656 /* LaunchScreen.storyboard */,
 				8940639D2281764300F9C656 /* Info.plist */,
 			);
 			path = "TYSnapshotScroll-swift";
+			sourceTree = "<group>";
+		};
+		894063A32281764D00F9C656 /* TYSnapshotScroll */ = {
+			isa = PBXGroup;
+			children = (
+				894063A42281766800F9C656 /* TYSnapshotScroll.swift */,
+				894063A62281769400F9C656 /* UIView+TYSnapshotScroll.swift */,
+				894063A8228176A800F9C656 /* UIImage+TYSnapshotScroll.swift */,
+				894063AA228176C100F9C656 /* UIScrollView+TYSnapshotScroll.swift */,
+				894063AC228176D200F9C656 /* UIViewController+TYSnapshotScroll.swift */,
+				894063AE228176E600F9C656 /* WKWebView+TYSnapshotScroll.swift */,
+			);
+			path = TYSnapshotScroll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				894063A72281769400F9C656 /* UIView+TYSnapshotScroll.swift in Sources */,
+				894063AB228176C100F9C656 /* UIScrollView+TYSnapshotScroll.swift in Sources */,
+				894063AF228176E600F9C656 /* WKWebView+TYSnapshotScroll.swift in Sources */,
 				894063942281764200F9C656 /* ViewController.swift in Sources */,
+				894063AD228176D200F9C656 /* UIViewController+TYSnapshotScroll.swift in Sources */,
+				894063A52281766800F9C656 /* TYSnapshotScroll.swift in Sources */,
 				894063922281764200F9C656 /* AppDelegate.swift in Sources */,
+				894063A9228176A800F9C656 /* UIImage+TYSnapshotScroll.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
